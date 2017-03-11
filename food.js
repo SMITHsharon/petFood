@@ -33,6 +33,7 @@ function writeDogDOM(xhrData){
 
 function writeCatDOM(xhrData){
 
+	// write the cat food products to the DOM
 	var productString = `<h1 class="sectionHeader">Cat<br>Food<br>Products</h1>`;
 	var currentpProduct;
 
@@ -65,6 +66,12 @@ function writeCatDOM(xhrData){
 }
 
 
+//**************************************************
+// function cleans a particular food string
+// Replaces <underscore> char with a <space>
+// And caps the following word in the string
+// RETURNS the cleanded string
+//**************************************************
 function cleanedProductString (foodString) {
 	
 	tempStr = foodString.replace("_", " ");
@@ -99,7 +106,9 @@ function executeThisCodeAfterFileFails(){
 }
 
 
-
+//**************************************************
+// executes the XHR requests
+//**************************************************
 var myRequest = new XMLHttpRequest();
 myRequest.addEventListener("load", executeTheDogDOMAfterFileLoaded);
 myRequest.addEventListener("error", executeThisCodeAfterFileFails);
