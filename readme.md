@@ -4,13 +4,12 @@
 This assignment reads data provided in `JSON` format and displays it in `html`. 
 Additionally, other data provided in spreadsheet form is coded in `JSON` format. 
 #### Pet Food Display
-![Pet Food Output Screen](https:xxx.png)
+![Pet Food Output Screen](https://raw.githubusercontent.com/SMITHsharon/petFood/screen/Screen%20Grab%20for%20Pet%20Food.png)
 
 ### Project Specs
-1. Given: a file in JSON format of dog food products. Each brand of dog food is represented by an object in an array (shown below), `dogs.json`. 
+1. Given: a file in `JSON` format of dog food products. Each brand of dog food is represented by an object in an array (shown below), `dogs.json`. 
 2. Built an `html` product page that displays all brands of dog food, the different types, with the price and size for each container volume. 
-3. Then, given a spreadsheet of similar data for cat food products. 
-4. Coded the cat food data into JSON format, `cats.json`. 
+3. Then, given a spreadsheet of similar data for cat food products, coded the cat food data into `JSON` format, `cats.json`. 
 4. Added the cat food data to the `html` display page.  
 
 ```
@@ -100,7 +99,7 @@ Meow Meal	Manx, Egyptian Mau, Himalayan, Rag Doll	Kitten, 24oz, 19.99 : Kitten, 
 #### (Node must be installed on your machine):
 ```
 git clone git@github.com:SMITHsharon/petFood.git
-cd my-treehouse
+cd food
 npm install http-server -g
 http-server -p 8080
 ```
