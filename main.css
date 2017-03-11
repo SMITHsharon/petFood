@@ -3,25 +3,57 @@ body {
 	background-color: wheat;
 }
 
+h1 {
+	text-align: center;
+}
+
 #dogFoodProducts, #catFoodProducts { /* containers for product priceCards */
-	max-width: 80%;
+	max-width: 50%;
 	border: 3px solid slategrey;
 	display: flex;
 	flex-direction: rows;
-	margin: auto;
+	margin: 5% 25%;
+	padding: 25px 25px;
 	justify-content: space-around;
 }
 
 .foodName {
 	background-color: oldlace;
-    width: 40%;
-    border: 1px dotted slategray;
+    width: 35%;
+    border: 1px solid slategray;
 	border-radius: 8px;
-    margin: 10px 10px;
-    padding: 10px 20px;
+    margin: 0px 10px 0 10px;
+    padding: 10px 20px 10px 20px;
     /*align-content: space-around;*/
 }
 
 .brandName {
-
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-size: 1.5em;
 }
+
+.thisType {
+	margin-top: 10px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	font-weight: 900;
+}
+
+.thisPrice {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
