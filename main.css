@@ -1,14 +1,16 @@
 
 body {
 	background-color: wheat;
+	font-family: 'Nunito Sans', sans-serif;
 }
 
 h1 {
+	margin-top: 5%;
 	text-align: center;
 }
 
 #dogFoodProducts, #catFoodProducts { /* containers for product priceCards */
-	max-width: 50%;
+	max-width: 80%;
 	border: 3px solid slategrey;
 	display: flex;
 	flex-direction: rows;
@@ -17,14 +19,19 @@ h1 {
 	justify-content: space-around;
 }
 
+.sectionHeader {
+	display: inline-block;
+	max-width: 100%;
+}
+
 .foodName {
 	background-color: oldlace;
-    width: 35%;
+    width: 55%;
     border: 1px solid slategray;
 	border-radius: 8px;
     margin: 0px 10px 0 10px;
     padding: 10px 20px 10px 20px;
-    /*align-content: space-around;*/
+    align-self: flex-start;
 }
 
 .brandName {
@@ -47,7 +54,11 @@ h1 {
 	padding-bottom: 0;
 }
 
-
+.breeds {
+	margin-top: 0;
+	padding-top: 0;
+	font-weight: 900;
+}
 
 
 

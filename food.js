@@ -1,10 +1,11 @@
 
-console.log("writing to console");
-
 var dogFoodContainer = document.getElementById("dogFoodProducts");
-function makeDOM(xhrData){
+var catFoodContainer = document.getElementById("catFoodProducts");
 
-	var productString = `<h1>Dog<br>Food<br>Products</h1>`;
+function writeDogDOM(xhrData){
+
+	// write the dog food products to the DOM
+	var productString = `<h1 class="sectionHeader">Dog Food Products</h1>`;
 	var currentpProduct;
 
 	for (var i=0; i<xhrData.dog_brands.length; i++) {
@@ -15,7 +16,7 @@ function makeDOM(xhrData){
 
 			for (var j=0; j<currentProduct.types.length; j++) {
 				productString += `<p class="thisType">${cleanedProductString(currentProduct.types[j].type)}</p>`;
-				// productString += `<p class="thisType">${currentProduct.types[j].type.replace("_", " ").charAt(0).toUpperCase()}</p>`;
+				
 
 				for (var k=0; k<currentProduct.types[j].volumes.length; k++) {
 					productString += `<p class="thisPrice">${currentProduct.types[j].volumes[k].name}: `
@@ -29,9 +30,43 @@ function makeDOM(xhrData){
 	dogFoodContainer.innerHTML = productString;
 }
 
+
+function writeCatDOM(xhrData){
+
+	var productString = `<h1 class="sectionHeader">Cat<br>Food<br>Products</h1>`;
+	var currentpProduct;
+
+	for (var i=0; i<xhrData.cat_brands.length; i++) {
+		currentProduct = xhrData.cat_brands[i];
+		
+			productString += `<div class="foodName">`;
+			productString += `<h3 class="brandName">${currentProduct.name}</h3>`;
+
+			productString += `<p class="breeds">${currentProduct.breeds[0]}`
+			for (var j=0; j<currentProduct.breeds.length; j++) {
+				productString+= `, ${currentProduct.breeds[j]}`
+			}
+
+			
+			for (var j=0; j<currentProduct.types.length; j++) {
+				productString += `<p class="thisType">${cleanedProductString(currentProduct.types[j].type)}</p>`;
+				
+
+				for (var k=0; k<currentProduct.types[j].volumes.length; k++) {
+					productString += `<p class="thisPrice">${currentProduct.types[j].volumes[k].name}: `
+					productString += `$${currentProduct.types[j].volumes[k].price}</p>`;
+				} // k loop
+			} // j loop	
+
+			productString += `</div>`;
+	} // i loop
+
+	catFoodContainer.innerHTML = productString;
+}
+
+
 function cleanedProductString (foodString) {
 	
-console.log("foodString :: ", foodString);
 	tempStr = foodString.replace("_", " ");
 	secondCap = false;
 	if (tempStr.includes(" ") === true) {
@@ -47,11 +82,16 @@ console.log("foodString :: ", foodString);
 	return tempStr;
 }
 
-function executeThisCodeAfterFileLoaded(){
 
+function executeTheDogDOMAfterFileLoaded(){
 	var data = JSON.parse(this.responseText);
-	console.log("parsed data :: ", data);
-	makeDOM(data);
+	writeDogDOM(data);
+}
+
+
+function executeTheCatDOMAfterFileLoaded(){
+	var data = JSON.parse(this.responseText);
+	writeCatDOM(data);
 }
 
 function executeThisCodeAfterFileFails(){
@@ -61,13 +101,16 @@ function executeThisCodeAfterFileFails(){
 
 
 var myRequest = new XMLHttpRequest();
-
-myRequest.addEventListener("load", executeThisCodeAfterFileLoaded);
+myRequest.addEventListener("load", executeTheDogDOMAfterFileLoaded);
 myRequest.addEventListener("error", executeThisCodeAfterFileFails);
 myRequest.open("GET", "dogs.json");
 myRequest.send();
-console.log("myRequest", myRequest);
 
+var myRequest2 = new XMLHttpRequest();
+myRequest2.addEventListener("load", executeTheCatDOMAfterFileLoaded);
+myRequest2.addEventListener("error", executeThisCodeAfterFileFails);
+myRequest2.open("GET", "cats.json");
+myRequest2.send();
 
 
 
