@@ -91,7 +91,7 @@ Additionally, other data provided in spreadsheet form is coded in `JSON` format.
 ### Technologies Used
 - `html`
 - `css`
-- JavaScript`
+- `JavaScript`
 - `XHR` and `JSON` request
 
 
