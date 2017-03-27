@@ -12,87 +12,87 @@ Additionally, other data provided in spreadsheet form is coded in `JSON` format.
 3. Then, given a spreadsheet of similar data for cat food products, coded the cat food data into `JSON` format, `cats.json`. 
 4. Added the cat food data to the `html` display page.  
 
-```
-dogs.json
-{
-  "dog_brands": [
-    {
-      "name": "Chuck wagon",
-      "types": [
-        {
-          "type": "all_natural",
-          "volumes": [
-            {
-              "name": "32oz",
-              "price": 9.99
-            },
-            {
-              "name": "64oz",
-              "price": 17.99
-            }
-          ]
-        },
-        {
-          "type": "standard",
-          "volumes": [
-            {
-              "name": "58oz",
-              "price": 12.99
-            },
-            {
-              "name": "72oz",
-              "price": 21.99
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Purina",
-      "types": [
-        {
-          "type": "puppy",
-          "volumes": [
-            {
-              "name": "16oz",
-              "price": 8.99
-            },
-            {
-              "name": "24oz",
-              "price": 14.99
-            }
-          ]
-        },
-        {
-          "type": "standard",
-          "volumes": [
-            {
-              "name": "58oz",
-              "price": 19.99
-            },
-            {
-              "name": "72oz",
-              "price": 24.99
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-```
-cats spreadsheet data
-Brand	Breeds	Types / Prices
-Purrina	Siamese, Bengal, Showshoe, Munchkin	Kitten, 20oz, 19.99 : Kitten, 32oz, 26.99 : Kitten, 64oz, 34.99 : Elite, 20oz, 24.99 : Elite, 40oz, 47.99
-Meow Meal	Manx, Egyptian Mau, Himalayan, Rag Doll	Kitten, 24oz, 19.99 : Kitten, 48oz, 34.99 : Adult, 28oz, 22.99 : Adult, 56oz, 40.99
-```
+  ```
+  dogs.json
+  {
+    "dog_brands": [
+      {
+        "name": "Chuck wagon",
+        "types": [
+          {
+            "type": "all_natural",
+            "volumes": [
+              {
+                "name": "32oz",
+                "price": 9.99
+              },
+              {
+                "name": "64oz",
+                "price": 17.99
+              }
+            ]
+          },
+          {
+            "type": "standard",
+            "volumes": [
+              {
+                "name": "58oz",
+                "price": 12.99
+              },
+              {
+                "name": "72oz",
+                "price": 21.99
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Purina",
+        "types": [
+          {
+            "type": "puppy",
+            "volumes": [
+              {
+                "name": "16oz",
+                "price": 8.99
+              },
+              {
+                "name": "24oz",
+                "price": 14.99
+              }
+            ]
+          },
+          {
+            "type": "standard",
+            "volumes": [
+              {
+                "name": "58oz",
+                "price": 19.99
+              },
+              {
+                "name": "72oz",
+                "price": 24.99
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  ```
+  ```
+  cats spreadsheet data
+  Brand	Breeds	Types / Prices
+  Purrina	Siamese, Bengal, Showshoe, Munchkin	Kitten, 20oz, 19.99 : Kitten, 32oz, 26.99 : Kitten, 64oz, 34.99 : Elite, 20oz, 24.99 : Elite, 40oz, 47.99
+  Meow Meal	Manx, Egyptian Mau, Himalayan, Rag Doll	Kitten, 24oz, 19.99 : Kitten, 48oz, 34.99 : Adult, 28oz, 22.99 : Adult, 56oz, 40.99
+  ```
 
 ### Technologies Used
-- html
-- css
-- javascript
-- XHR and JSON request
+- `html`
+- `css`
+- JavaScript`
+- `XHR` and `JSON` request
 
 
 ### How To View The Screen 
