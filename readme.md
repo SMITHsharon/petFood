@@ -3,8 +3,10 @@
 ### Project Description 
 This assignment reads data provided in `JSON` format and displays it in `html`. 
 Additionally, other data provided in spreadsheet form is coded in `JSON` format. 
+
 #### Pet Food Display
 ![Pet Food Output Screen](https://raw.githubusercontent.com/SMITHsharon/petFood/screen/Screen%20Grab%20for%20Pet%20Food.png)
+
 
 ### Project Specs
 1. Given: a file in `JSON` format of dog food products. Each brand of dog food is represented by an object in an array (shown below), `dogs.json`. 
@@ -108,3 +110,4 @@ This will show in your browser at: `http://localhost:8080`
 
 ### Contributor
 [Sharon Smith](https://github.com/SMITHsharon)
+
