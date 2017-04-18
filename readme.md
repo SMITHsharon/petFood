@@ -102,7 +102,6 @@ Additionally, other data provided in spreadsheet form is coded in `JSON` format.
 ```
 git clone git@github.com:SMITHsharon/petFood.git
 cd food
-npm install http-server -g
 http-server -p 8080
 ```
 
