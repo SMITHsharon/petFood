@@ -10,9 +10,9 @@ Additionally, other data provided in spreadsheet form is coded in `JSON` format.
 
 ### Project Specs
 1. Given: a file in `JSON` format of dog food products. Each brand of dog food is represented by an object in an array (shown below), `dogs.json`. 
-2. Built an `html` product page that displays all brands of dog food, the different types, with the price and size for each container volume. 
-3. Then, given a spreadsheet of similar data for cat food products, coded the cat food data into `JSON` format, `cats.json`. 
-4. Added the cat food data to the `html` display page.  
+2. Builds an `html` product page that displays all brands of dog food, the different types, with the price and size for each container volume. 
+3. Then, given a spreadsheet of similar data for cat food products, codes the cat food data into `JSON` format, `cats.json`. 
+4. Adds the cat food data to the `html` display page.  
 
   ```
   dogs.json
@@ -103,10 +103,9 @@ Additionally, other data provided in spreadsheet form is coded in `JSON` format.
 git clone git@github.com:SMITHsharon/petFood.git
 cd food
 http-server -p 8080
+This will show in your browser at: http://localhost:8080
 ```
 
-This will show in your browser at: `http://localhost:8080`
 
 ### Contributor
 [Sharon Smith](https://github.com/SMITHsharon)
-
